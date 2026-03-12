@@ -1,0 +1,95 @@
+body{
+font-family:Poppins;
+}
+
+.navbar{
+background:#001f3f;
+transition:0.3s;
+}
+
+.navbar.scrolled{
+background:#000;
+box-shadow:0 4px 15px rgba(0,0,0,0.4);
+}
+
+.hero-img{
+height:100vh;
+width:100%;
+object-fit:cover;
+}
+
+.carousel-caption{
+bottom:40%;
+}
+
+.section-title{
+font-family:Playfair Display;
+font-weight:700;
+}
+
+.btn-gold{
+background:#d4af37;
+color:white;
+}
+
+.service-card{
+background:white;
+padding:40px;
+text-align:center;
+border-radius:15px;
+transition:0.4s;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.service-card:hover{
+transform:translateY(-10px);
+color: #f4e917;
+}
+
+.service-card i{
+font-size:40px;
+color:#d4af37;
+margin-bottom:20px;
+}
+
+
+/* 3D PROJECT GALLERY */
+
+.project-3d-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+perspective:1000px;
+}
+
+.project-card3d{
+transform-style:preserve-3d;
+transition:0.6s;
+}
+
+.project-card3d img{
+width:100%;
+border-radius:12px;
+box-shadow:0 20px 40px rgba(0,0,0,0.3);
+}
+
+.project-card3d:hover{
+transform:rotateY(15deg) rotateX(10deg) scale(1.05);
+}
+
+
+.footer{
+background:#001226;
+}
+
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+color:white;
+font-size:28px;
+padding:15px;
+border-radius:50%;
+z-index:999;
+}
