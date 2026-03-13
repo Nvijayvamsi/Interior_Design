@@ -21,13 +21,15 @@
 
 <body>
 
+<div id="progress-bar"></div>
+
 <!-- NAVBAR -->
 
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
 <div class="container">
 
-<a class="navbar-brand" href="#">
-<img src="images/logo.png" height="45">
+<a class="navbar-brand d-flex align-items-center" href="#">
+<img src="images/logo.png" height="50">
 <span class="ms-2 fw-bold">NANI INTERIORS</span>
 </a>
 
@@ -37,7 +39,7 @@
 
 <div class="collapse navbar-collapse" id="nav">
 
-<ul class="navbar-nav ms-auto">
+<ul class="navbar-nav ms-auto text-center">
 
 <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
@@ -45,7 +47,13 @@
 <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
 
-<li class="nav-item ms-lg-3">
+<li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+<button id="theme-toggle" class="btn btn-gold">
+<i class="fas fa-moon"></i>
+</button>
+</li>
+
+<li class="nav-item ms-lg-2 mt-3 mt-lg-0">
 <a class="btn btn-gold px-4" href="#contact">Get Quote</a>
 </li>
 
@@ -56,37 +64,22 @@
 </nav>
 
 
-<!-- HERO SLIDER -->
+<!-- HERO -->
 
-<section id="home">
+<section id="home" class="hero-section">
 
-<div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+<div class="hero-overlay"></div>
 
-<div class="carousel-inner">
-
-<div class="carousel-item active">
 <img src="Images/homepage.png" class="hero-img">
-<div class="carousel-caption">
+
+<div class="hero-content text-center">
+
 <h1>Luxury Interior Design</h1>
 <p>Crafting Beautiful Spaces</p>
-</div>
-</div>
 
-<div class="carousel-item">
-<img src="Images/6.jpeg" class="hero-img">
-<div class="carousel-caption">
-<h1>Elegant Modular Kitchens</h1>
-</div>
-</div>
-
-<div class="carousel-item">
-<img src="Images/3.jpeg" class="hero-img">
-<div class="carousel-caption">
-<h1>Premium Wardrobes</h1>
-</div>
-</div>
-
-</div>
+<a href="#services" class="btn btn-gold mt-3 px-4 py-2">
+Explore Services
+</a>
 
 </div>
 
@@ -99,47 +92,96 @@
 
 <div class="container">
 
-<div class="row align-items-center">
+<div class="row align-items-center g-4">
 
 <div class="col-lg-6" data-aos="fade-right">
 
 <h2 class="section-title mb-4">About Nani Interior Works</h2>
 
 <p>
-Professional interior design and woodwork company in Vijayawada
-with over 5 years experience.
+<strong>Nani Interior Works</strong> is a trusted interior design and woodwork company based in Vijayawada, delivering creative and high-quality interior solutions for homes and commercial spaces.
 </p>
 
 <p>
-Specialized in modular kitchens, wardrobes, TV units and
-complete home interiors.
+With over <strong>5 years of experience</strong>, we specialize in designing stylish, functional, and modern interiors that match our clients’ lifestyle and preferences. Our team focuses on quality craftsmanship, innovative design ideas, and durable materials.
 </p>
 
+<p>
+We provide customized interior services including modular kitchens, wardrobes, TV units, false ceilings, wooden furniture, and complete home interior solutions. Every project we handle is designed with attention to detail and executed with precision.
+</p>
+
+<p>
+Our mission is to transform ordinary spaces into beautiful and comfortable environments while ensuring customer satisfaction, affordability, and timely project completion.
+</p>
+
+<ul class="about-list mt-3">
+
+<li>✔ Customized Interior Designs</li>
+<li>✔ High Quality Woodwork</li>
+<li>✔ Modern Modular Kitchen Solutions</li>
+<li>✔ Professional Installation Team</li>
+<li>✔ Affordable Pricing with Premium Finish</li>
+
+</ul>
+
 </div>
 
-<div class="col-lg-6" data-aos="fade-left">
 
-<img src="Images/20.jpeg" class="img-fluid rounded shadow">
+<div class="col-lg-6 text-center" data-aos="fade-left">
+
+<img src="Images/20.jpeg" class="img-fluid rounded shadow about-img">
+
+</div>
 
 </div>
 
 </div>
 
+</section>
+
+<!-- COUNTERS -->
+
+<section class="counter-section py-5 text-center">
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-md-4">
+<h2 class="counter" data-target="50">0</h2>
+<p>Projects Completed</p>
 </div>
+
+<div class="col-md-4">
+<h2 class="counter" data-target="45">0</h2>
+<p>Happy Clients</p>
+</div>
+
+<div class="col-md-4">
+<h2 class="counter" data-target="5">0</h2>
+<p>Years Experience</p>
+</div>
+
+</div>
+
+</div>
+
 </section>
 
 
-<!-- ADVANCED SERVICES -->
+<!-- SERVICES -->
 
 <section id="services" class="py-5 bg-light">
 
 <div class="container">
 
-<h2 class="section-title text-center mb-5">Our Services</h2>
+<h2 class="section-title text-center mb-5">
+Our Services
+</h2>
 
 <div class="row g-4">
 
-<div class="col-lg-4">
+<div class="col-md-6 col-lg-4">
 <div class="service-card">
 <i class="fas fa-kitchen-set"></i>
 <h4>Modular Kitchen</h4>
@@ -147,7 +189,7 @@ complete home interiors.
 </div>
 </div>
 
-<div class="col-lg-4">
+<div class="col-md-6 col-lg-4">
 <div class="service-card">
 <i class="fas fa-door-open"></i>
 <h4>Wardrobes</h4>
@@ -155,7 +197,7 @@ complete home interiors.
 </div>
 </div>
 
-<div class="col-lg-4">
+<div class="col-md-6 col-lg-4">
 <div class="service-card">
 <i class="fas fa-tv"></i>
 <h4>TV Units</h4>
@@ -163,7 +205,7 @@ complete home interiors.
 </div>
 </div>
 
-<div class="col-lg-4">
+<div class="col-md-6 col-lg-4">
 <div class="service-card">
 <i class="fas fa-lightbulb"></i>
 <h4>False Ceiling</h4>
@@ -171,7 +213,7 @@ complete home interiors.
 </div>
 </div>
 
-<div class="col-lg-4">
+<div class="col-md-6 col-lg-4">
 <div class="service-card">
 <i class="fas fa-chair"></i>
 <h4>Wood Furniture</h4>
@@ -179,7 +221,7 @@ complete home interiors.
 </div>
 </div>
 
-<div class="col-lg-4">
+<div class="col-md-6 col-lg-4">
 <div class="service-card">
 <i class="fas fa-home"></i>
 <h4>Full Interiors</h4>
@@ -193,41 +235,24 @@ complete home interiors.
 </section>
 
 
-<!-- 3D PROJECT GALLERY -->
+<!-- PROJECT GALLERY -->
 
 <section id="projects" class="py-5">
 
 <div class="container">
 
 <h2 class="section-title text-center mb-5">
-3D Project Showcase
+Project Gallery
 </h2>
 
 <div class="project-3d-container">
 
-<div class="project-card3d">
-<img src="Images/6.jpeg">
-</div>
-
-<div class="project-card3d">
-<img src="Images/3.jpeg">
-</div>
-
-<div class="project-card3d">
-<img src="Images/13.jpeg">
-</div>
-
-<div class="project-card3d">
-<img src="Images/12.jpeg">
-</div>
-
-<div class="project-card3d">
-<img src="Images/16.jpeg">
-</div>
-
-<div class="project-card3d">
-<img src="Images/11.jpeg">
-</div>
+<div class="project-card3d"><img src="Images/6.jpeg"></div>
+<div class="project-card3d"><img src="Images/3.jpeg"></div>
+<div class="project-card3d"><img src="Images/13.jpeg"></div>
+<div class="project-card3d"><img src="Images/12.jpeg"></div>
+<div class="project-card3d"><img src="Images/16.jpeg"></div>
+<div class="project-card3d"><img src="Images/11.jpeg"></div>
 
 </div>
 
@@ -241,17 +266,25 @@ complete home interiors.
 
 <div class="container">
 
-<h2 class="section-title text-center mb-5">Contact Us</h2>
+<h2 class="section-title text-center mb-5">
+Contact Us
+</h2>
 
-<div class="row">
+<div class="row g-4">
 
-<div class="col-md-5">
+<div class="col-lg-5">
 
-<p><i class="fas fa-map-marker-alt me-2"></i>Vijayawada</p>
+<p class="contact-text">
+<i class="contact fas fa-map-marker-alt me-2"></i> Vijayawada
+</p>
 
-<p><i class="fas fa-phone me-2"></i>+91 9666657285</p>
+<p class="contact-text">
+<i class="contact fas fa-phone me-2"></i> +91 9666657285
+</p>
 
-<p><i class="fas fa-envelope me-2"></i>info@naniinteriors.com</p>
+<p class="contact-text">
+<i class="contact fas fa-envelope me-2"></i> info@naniinteriors.com
+</p>
 
 <a href="https://wa.me/919666657285" class="btn btn-success">
 WhatsApp
@@ -259,7 +292,7 @@ WhatsApp
 
 </div>
 
-<div class="col-md-7">
+<div class="col-lg-7">
 
 <iframe
 src="https://www.google.com/maps?q=vijayawada&output=embed"
@@ -273,7 +306,6 @@ style="border:0;">
 </div>
 
 </div>
-
 </section>
 
 
@@ -282,11 +314,14 @@ style="border:0;">
 </footer>
 
 
-<!-- FLOATING WHATSAPP -->
-
 <a href="https://wa.me/919666657285" class="whatsapp">
 <i class="fab fa-whatsapp"></i>
 </a>
+
+
+<div id="lightbox">
+<img id="lightbox-img">
+</div>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
